@@ -1,3 +1,5 @@
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+
 const babelRules = {
   test: /\.js$/,
   loader: 'babel-loader',
@@ -14,5 +16,10 @@ module.exports = {
   entry: './src/index.jsx',
   module:{
     rules:[babelRules, cssRules]
-  }
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: './public/index.html'
+    })
+  ]
 }
