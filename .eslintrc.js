@@ -4,6 +4,11 @@ module.exports = {
         "es2021": true,
         "node": true
     },
+    "settings": {
+        "react": {
+          "version": "17.0.1"
+        }
+      },
     "extends": [
         "eslint:recommended",
         "plugin:react/recommended"

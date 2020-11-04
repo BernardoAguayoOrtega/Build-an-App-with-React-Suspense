@@ -6,7 +6,9 @@
   "scripts": {
     "build": "webpack",
     "dev": "webpack-dev-server --open",
-    "test": "jest"
+    "test": "jest",
+    "format": "pretty-quick",
+    "lint": "eslint ./"
   },
   "repository": {
     "type": "git",
