@@ -1,0 +1,26 @@
+{
+  "name": "build-an-app-with-react-suspense",
+  "version": "1.0.0",
+  "description": "React suspense gives us a new way of describing with finre-grain controls how users experience shuld look baesd on data we have or don't have.",
+  "main": "index.jsx",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BernardoAguayoOrtega/build-an-app-with-react-suspense.git"
+  },
+  "keywords": [
+    "react.js",
+    "js",
+    "webpack",
+    "babel",
+    "practice"
+  ],
+  "author": "Bernardo Aguayo Ortega",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BernardoAguayoOrtega/build-an-app-with-react-suspense/issues"
+  },
+  "homepage": "https://github.com/BernardoAguayoOrtega/build-an-app-with-react-suspense#readme"
+}
