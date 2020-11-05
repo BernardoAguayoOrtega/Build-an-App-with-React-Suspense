@@ -1,18 +1,20 @@
 // import react
-import React from "react";
-// import pokemon detail
-// import PokemonDetail from "../PokemonDetail/index.jsx";
+import React from 'react';
+// import error boundary
+import ErrorBoundary from '../ ErrorBoundary/index.jsx';
 
 // import dynamic of pokemon detail
-const PokemonDetail = React.lazy(() => import("../PokemonDetail/index.jsx"))
+const PokemonDetail = React.lazy(() => Promise.reject());
 
 export default function App() {
-  return (
-    <>
-      <h1>Pokedex</h1>
-      <React.Suspense fallback='Loading pokemon'>
-        <PokemonDetail />
-      </React.Suspense>
-    </>
-  );
+	return (
+		<>
+			<h1>Pokedex</h1>
+			<ErrorBoundary>
+				<React.Suspense fallback='Loading pokemon'>
+					<PokemonDetail />
+				</React.Suspense>
+			</ErrorBoundary>
+		</>
+	);
 }
