@@ -4,7 +4,7 @@ import React from 'react';
 import ErrorBoundary from '../ ErrorBoundary/index.jsx';
 
 // import dynamic of pokemon detail
-const PokemonDetail = React.lazy(() => Promise.reject());
+const PokemonDetail = React.lazy(() => import('../PokemonDetail/index.jsx'));
 
 export default function App() {
 	return (
