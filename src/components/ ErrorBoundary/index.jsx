@@ -35,5 +35,5 @@ ErrorBoundary.propTypes = {
 };
 
 ErrorBoundary.defaultProps = {
-  fallback: 'Something goes wrong'
+  fallback: 'Something went wrong'
 }
