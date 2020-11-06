@@ -1,51 +1,55 @@
 {
-  "name": "build-an-app-with-react-suspense",
-  "version": "1.0.0",
-  "description": "React suspense gives us a new way of describing with finre-grain controls how users experience shuld look baesd on data we have or don't have.",
-  "main": "index.jsx",
-  "scripts": {
-    "build": "webpack",
-    "dev": "webpack-dev-server --open",
-    "test": "jest",
-    "format": "pretty-quick",
-    "lint": "eslint ./"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/BernardoAguayoOrtega/build-an-app-with-react-suspense.git"
-  },
-  "keywords": [
-    "react.js",
-    "js",
-    "webpack",
-    "babel",
-    "practice"
-  ],
-  "author": "Bernardo Aguayo Ortega",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/BernardoAguayoOrtega/build-an-app-with-react-suspense/issues"
-  },
-  "homepage": "https://github.com/BernardoAguayoOrtega/build-an-app-with-react-suspense#readme",
-  "dependencies": {
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1"
-  },
-  "devDependencies": {
-    "@babel/preset-env": "^7.12.1",
-    "@babel/preset-react": "^7.12.5",
-    "babel-loader": "^8.1.0",
-    "css-loader": "^5.0.1",
-    "eslint": "^7.12.1",
-    "eslint-plugin-react": "^7.21.5",
-    "html-webpack-plugin": "^4.5.0",
-    "husky": "^4.3.0",
-    "jest": "^26.6.3",
-    "prettier": "^2.1.2",
-    "pretty-quick": "^3.1.0",
-    "prop-types": "^15.7.2",
-    "webpack": "^5.4.0",
-    "webpack-cli": "^3.3.12",
-    "webpack-dev-server": "^3.11.0"
-  }
+	"name": "build-an-app-with-react-suspense",
+	"version": "1.0.0",
+	"description": "React suspense gives us a new way of describing with finre-grain controls how users experience shuld look baesd on data we have or don't have.",
+	"main": "index.jsx",
+	"scripts": {
+		"build": "webpack",
+		"dev": "webpack-dev-server --open",
+		"test": "jest",
+		"format": "pretty-quick",
+		"lint": "eslint ./"
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "pretty-quick && npm run lint"
+		}
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/BernardoAguayoOrtega/build-an-app-with-react-suspense.git"
+	},
+	"keywords": [
+		"react.js",
+		"js",
+		"webpack",
+		"babel",
+		"practice"
+	],
+	"author": "Bernardo Aguayo Ortega",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/BernardoAguayoOrtega/build-an-app-with-react-suspense/issues"
+	},
+	"homepage": "https://github.com/BernardoAguayoOrtega/build-an-app-with-react-suspense#readme",
+	"dependencies": {
+		"react": "^17.0.1",
+		"react-dom": "^17.0.1"
+	},
+	"devDependencies": {
+		"@babel/preset-env": "^7.12.1",
+		"@babel/preset-react": "^7.12.5",
+		"babel-loader": "^8.1.0",
+		"css-loader": "^5.0.1",
+		"eslint": "^7.12.1",
+		"eslint-plugin-react": "^7.21.5",
+		"html-webpack-plugin": "^4.5.0",
+		"husky": "^4.3.0",
+		"prettier": "^2.1.2",
+		"pretty-quick": "^3.1.0",
+		"prop-types": "^15.7.2",
+		"webpack": "^5.4.0",
+		"webpack-cli": "^3.3.12",
+		"webpack-dev-server": "^3.11.0"
+	}
 }
