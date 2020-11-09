@@ -1,7 +1,7 @@
 // import react
 import React from 'react';
 // import render method
-import { render } from 'react-dom';
+import ReactDOM from 'react-dom';
 // import the app
 import App from './components/App/index.jsx';
 
@@ -10,4 +10,4 @@ const root = document.getElementById('root');
 
 // render the app
 
-render(<App />, root);
+ReactDOM.unstable_createRoot(root).render(<App />)
