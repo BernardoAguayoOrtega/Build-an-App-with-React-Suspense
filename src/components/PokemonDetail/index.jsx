@@ -1,9 +1,24 @@
 import React from 'react';
 
-import { suspensify, fetchPokemon} from '../../utils/api'
+import { suspensify, fetchPokemon } from '../../utils/api';
 
-let pokemon = suspensify(fetchPokemon(50));
+let initialPokemon = suspensify(fetchPokemon(1));
 
 export default function PokemonDetail() {
-  return <div>{pokemon.read().name}</div>;
+  const [pokemonResource, setPokemonResource] = React.useState(initialPokemon);
+
+  const pokemon = pokemonResource.read();
+
+  return (
+    <>
+      <p>{pokemon.name}</p>
+      <button
+        onClick={() =>
+          setPokemonResource(suspensify(fetchPokemon(pokemon?.id + 1)))
+        }
+      >
+        Next xd
+      </button>
+    </>
+  );
 }
